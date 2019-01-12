@@ -17,6 +17,10 @@
 #
 
 import sys
+import subprocess
+
+#res = subprocess.call("direwolf -r 48000 udp:7355")
+res = subprocess.call("ls")
 
 while True:
     try:
