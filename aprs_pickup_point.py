@@ -18,14 +18,20 @@
 
 import sys
 
-while True:
-    try:
-        inline = sys.stdin.readline()
-        north = inline.find("N ")
-        south = inline.find("S ")
-        if north == 26 or south == 26:
-            sys.stdout.write(inline)
+try: 
+    while True:
+        try:
+            inline = sys.stdin.readline()
+            north = inline.find("N ")
+            south = inline.find("S ")
+            if north == 26 or south == 26:
+                sys.stdout.write(inline)
+            
+        except:
+            pass
         
-    except:
-        pass
+    
+except KeyboardInterrupt:
+    pass
+    sys.exit()
     
